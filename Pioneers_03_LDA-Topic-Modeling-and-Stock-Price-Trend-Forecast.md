@@ -93,7 +93,7 @@ plt.ylabel('t-SNE Dimension 2')
 plt.show()
 ```
 
-![Picture showing the LDA]({static}/images/Pioneers_03_LDA.png)
+![Picture showing the LDA](./images/Pioneers_03_LDA.png)
 
 A word cloud is generated and visualized for each LDA topic. First, the code iterates through each topic and retrieves the top `num_words` keywords and their weights, then stores these keywords and their frequencies in a dictionary. Next, the `WordCloud` is used to generate the word cloud, with the size of the words reflecting their importance within the topic. Finally, each topic’s word cloud is displayed using `matplotlib`, helping to visually represent the core vocabulary and its weight within each topic.
 
@@ -111,13 +111,13 @@ for topic_id in range(num_topics):
     plt.show()
 ```
 
-![Picture showing the Word Cloud1]({static}/images/Pioneers_03_Word-Cloud1.png)
+![Picture showing the Word Cloud1](./images/Pioneers_03_Word-Cloud1.png)
 
 
-![Picture showing the Word Cloud2]({static}/images/Pioneers_03_Word-Cloud2.png)
+![Picture showing the Word Cloud2](./images/Pioneers_03_Word-Cloud2.png)
 
 
-![Picture showing the Word Cloud3]({static}/images/Pioneers_03_Word-Cloud3.png)
+![Picture showing the Word Cloud3](./images/Pioneers_03_Word-Cloud3.png)
 
 ## Stock Price Trend Forecast
 In this section, we try to predict the rise and fall trends of stock prices (classified as "rising", "flat", and "falling") through machine learning models, combine sentiment analysis of news texts (sentiment scores and labels) and structured technical indicators (such as BI, BI_MA), build a multimodal feature set, explore the correlation between market sentiment and stock price fluctuations, and ultimately improve prediction accuracy and provide support for investment decisions.
@@ -151,7 +151,7 @@ features[numeric_cols] = features[numeric_cols].fillna(features[numeric_cols].me
 ```
 ###### * Top 20 Features are as Below :
 
-![Picture showing the Word Cloud3]({static}/images/Pioneers_03_Important-Feature.jpg)
+![Picture showing the Word Cloud3](./images/Pioneers_03_Important-Feature.jpg)
 
 #### 2. Model Training & Regressing
 In the task of predicting stock price fluctuations, we selected three models: Random Forest, LightGBM and Logistic Regression, based on the following considerations: Random Forest can automatically process high-dimensional features, capture complex nonlinear relationships between features, and is suitable for mixed-type data; LightGBM has fast training speed, low memory usage, and supports efficient processing of high-dimensional sparse data (such as TF-IDF text features), which is suitable for optimizing the use of text features; the Logistic Regression model is simple and highly interpretable, and can clearly show the positive/negative impact of features, which is good for verifying the interpretability of sentiment features.
@@ -188,16 +188,16 @@ print("the report:")
 print(classification_report(y_test, y_pred, target_names=class_names))
 ```
 ###### * Example of a regression report output:
-![Picture showing the Word Cloud1]({static}/images/Pioneers_03_Regression-Report.png)
+![Picture showing the Word Cloud1](./images/Pioneers_03_Regression-Report.png)
 
 #### 3. Visualization & Analysis
 In the visualization of model results, we use the accuracy comparison chart to intuitively display the performance of each model, use gradient color matching and shadow texture to highlight the significant advantages of the model, and add a 65% baseline to clarify the optimization space; use the prediction probability distribution chart to analyze the model's prediction confidence for each category, explore the confidence interval of the high confidence area, and reveal the ambiguity of the model's classification of intermediate states; use the feature importance chart to reveal the sentiment score and text features, and verify the important contribution of sentiment analysis to stock price prediction. These visualization methods present the model performance in an intuitive and professional way.
 ###### * Random Forest Model Visualization Results：
-![Picture showing the Random Forest Model Visualization Results]({static}/images/Pioneers_03_Random-Forest.png)
+![Picture showing the Random Forest Model Visualization Results](./images/Pioneers_03_Random-Forest.png)
 
 ###### * LightGBM Model Visualization Results：
-![Picture showing the LightGBM Model Visualization Results]({static}/images/Pioneers_03_LightGBM.jpg)
+![Picture showing the LightGBM Model Visualization Results](./images/Pioneers_03_LightGBM.jpg)
 
 ###### * Logistic Model Visualization Results：
-![Picture showing the Logistic Model Visualization Results]({static}/images/Pioneers_03_Log-Reg.jpg)
+![Picture showing the Logistic Model Visualization Results](./images/Pioneers_03_Log-Reg.jpg)
 
