@@ -236,7 +236,7 @@ plt.show()
 ```
 After all, we get the word cloud:
 
-![Picture showing the word cloud]({static}/images/Pioneers_01_Word-Cloud.png)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/522cc5cf-8eec-4a12-b592-f6209e3587c0" />
 
 ## Conclusion
 So far we have clarified our project goals and completed data collection and 
