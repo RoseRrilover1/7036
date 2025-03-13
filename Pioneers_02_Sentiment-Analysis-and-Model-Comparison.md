@@ -116,7 +116,7 @@ plt.show()
 ```
 - **Confusion Matrix Heatmap**: Shows the confusion matrix of the Random Forest model.
 
-![Picture showing the Confusion Matrix]({static}/images/Pioneers_02_Confusion-Matrix.png)
+![Picture showing the Confusion Matrix](./images/Pioneers_02_Confusion-Matrix.png)
 
 ```python
 plt.figure(figsize=(8, 6))
