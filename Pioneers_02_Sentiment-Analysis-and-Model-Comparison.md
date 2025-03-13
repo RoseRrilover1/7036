@@ -148,4 +148,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Picture showing the word cloud]({static}/images/Pioneers_02_Model-Accuracy.jpg)
+![Picture showing the word cloud](./images/Pioneers_02_Model-Accuracy.jpg)
