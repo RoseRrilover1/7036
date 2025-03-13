@@ -236,7 +236,7 @@ plt.show()
 ```
 After all, we get the word cloud:
 
-<img width="400" alt="image" src="images/Pioneers_01_Word-Cloud.png" />
+<img width="1000" alt="image" src="images/Pioneers_01_Word-Cloud.png" />
 
 ## Conclusion
 So far we have clarified our project goals and completed data collection and 
